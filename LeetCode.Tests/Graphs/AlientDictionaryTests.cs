@@ -69,6 +69,7 @@ namespace LeetCode.Tests.Graphs
 			res = d.AlienOrder(new string[] { "z", "x", "z" });
             Assert.AreEqual(string.Empty, res);
 
+
 			res = d.AlienOrder(new string[] { "mtr", "mta", "bac", "bdt", "rd", "ad" });
 			Assert.AreEqual("tmcbrad", res);
 

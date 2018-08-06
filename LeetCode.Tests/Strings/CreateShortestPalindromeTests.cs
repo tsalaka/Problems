@@ -17,7 +17,7 @@ namespace LeetCode.Tests.Strings
             //Assert.AreEqual(0, LengthLongestPath("a"));
             var p = new CreateShortestPalindrome();
 
-            Assert.AreEqual("abb", p.ShortestPalindrome("abb"));
+            Assert.AreEqual("bbabb", p.ShortestPalindrome("abb"));
             Assert.AreEqual("aaacecaaa", p.ShortestPalindrome("aacecaaa"));
             Assert.AreEqual("aacecaa", p.ShortestPalindrome("aacecaa"));
             Assert.AreEqual("dcbabcd", p.ShortestPalindrome("abcd"));

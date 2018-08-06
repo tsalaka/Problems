@@ -21,7 +21,6 @@ namespace LeetCode.Tests.GreedyAlgorithm.Tests
             head.next.random = head.next.next;
             head.next.next.next.random = head.next;
             CopyRandomList(head);
-            Assert.AreEqual(5, MaxProfit(new int[] {7, 1, 5, 3, 6, 4 }));
             Assert.True(BackspaceCompare("nzp#o#g", "b#nzp#o#g"));
             Assert.False(BackspaceCompare("bbbextm", "bbb#extm"));
 			Assert.True(BackspaceCompare("ab##", "a#c#d#b#"));
