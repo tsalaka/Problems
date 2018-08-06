@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3097C7DA-B7E6-4C2E-9F8C-94FB94AEA928}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LeetCode</RootNamespace>
+    <AssemblyName>LeetCode</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings\BuildLongestPalindrome.cs" />
+    <Compile Include="Strings\MaxProductOfWordsLength.cs" />
+    <Compile Include="MergeSort.cs" />
+    <Compile Include="DynamicProgramming\MoneyExchanger.cs" />
+    <Compile Include="Graphs\ConnectedComponents.cs" />
+    <Compile Include="Graphs\GraphBase.cs" />
+    <Compile Include="Graphs\Graph.cs" />
+    <Compile Include="Sort\WiggleSort.cs" />
+    <Compile Include="QuickSort.cs" />
+    <Compile Include="Bits\PowerOfThree.cs" />
+    <Compile Include="Bits\CountingBits.cs" />
+    <Compile Include="Strings\LongestPalindromeSubstring.cs" />
+    <Compile Include="Strings\PalindromicSubArrays.cs" />
+    <Compile Include="Strings\PalindromePartitioning.cs" />
+    <Compile Include="Strings\LongestPalindromeSubsequence.cs" />
+    <Compile Include="LinkedList\Palindrome.cs" />
+    <Compile Include="LinkedList\ListNode.cs" />
+    <Compile Include="LinkedList\ReverseLinkedList.cs" />
+    <Compile Include="DynamicProgramming\CountUniqPalindromicSubsequences.cs" />
+    <Compile Include="DivideAndConqur\MajorityElement.cs" />
+    <Compile Include="Strings\WordBreak.cs" />
+    <Compile Include="Maths\Pow.cs" />
+    <Compile Include="Maths\DivideTwoNumbers.cs" />
+    <Compile Include="Trees\BSTIterator.cs" />
+    <Compile Include="Trees\TreeNode.cs" />
+    <Compile Include="Strings\StrStr.cs" />
+    <Compile Include="GreedyAlgorithm\MinMeetingRoom.cs" />
+    <Compile Include="Maths\FractionToDecimal.cs" />
+    <Compile Include="Trees\Trie.cs" />
+    <Compile Include="Sort\MedianOfTwoSortedArray.cs" />
+    <Compile Include="Strings\WordBreak2.cs" />
+    <Compile Include="Maths\BaseCalculator.cs" />
+    <Compile Include="Maths\BaseCalculator2.cs" />
+    <Compile Include="Strings\RegexMatching.cs" />
+    <Compile Include="LinkedList\MergeKList.cs" />
+    <Compile Include="Arrays\TrapRainWater.cs" />
+    <Compile Include="LinkedList\ReverseKGroup.cs" />
+    <Compile Include="Trees\MaxPathSum.cs" />
+    <Compile Include="Trees\BTSerialzer.cs" />
+    <Compile Include="Strings\CreateShortestPalindrome.cs" />
+    <Compile Include="UnionFind.cs" />
+    <Compile Include="Graphs\RedundantConnections.cs" />
+    <Compile Include="Graphs\RedundantConnections2.cs" />
+    <Compile Include="Graphs\AlientDictionary.cs" />
+    <Compile Include="Strings\FlipGame2.cs" />
+    <Compile Include="DynamicProgramming\PaintFence.cs" />
+    <Compile Include="BackTracking\FlipGame.cs" />
+    <Compile Include="Arrays\RotateArray.cs" />
+    <Compile Include="Arrays\ReverseWords.cs" />
+    <Compile Include="SegmentTree\RangeSum2D.cs" />
+    <Compile Include="Strings\WildcardMatching.cs" />
+    <Compile Include="Graphs\CloneUndirectedGraph.cs" />
+    <Compile Include="LinkedList\LFUCache.cs" />
+    <Compile Include="LinkedList\LRUCache.cs" />
+    <Compile Include="Strings\Permutation2.cs" />
+    <Compile Include="Trees\BuildBTFromInOrderAndPostOrder.cs" />
+    <Compile Include="BackTracking\Rob2.cs" />
+    <Compile Include="BackTracking\CanJump.cs" />
+    <Compile Include="LinkedList\DetectCycle.cs" />
+    <Compile Include="Strings\RemoveInvalidParentheses.cs" />
+    <Compile Include="QuickSelectionSort.cs" />
+    <Compile Include="QuickSortWithDuplicates.cs" />
+    <Compile Include="GreedyAlgorithm\MinNumberOfArrowsToBurstBallons.cs" />
+    <Compile Include="Arrays\SubsetArraySum.cs" />
+    <Compile Include="Sort\WiggleSort2.cs" />
+    <Compile Include="MaxHeap.cs" />
+    <Compile Include="Dequeue.cs" />
+    <Compile Include="Graphs\MeshMessager.cs" />
+    <Compile Include="Strings\GetShortestUniqueSubstring.cs" />
+    <Compile Include="Closed\Array\TwoSum170.cs" />
+    <Compile Include="MinHeap.cs" />
+    <Compile Include="Graphs\CourseSchedule2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Strings\" />
+    <Folder Include="DynamicProgramming\" />
+    <Folder Include="Graphs\" />
+    <Folder Include="Sort\" />
+    <Folder Include="Trees\" />
+    <Folder Include="Bits\" />
+    <Folder Include="LinkedList\" />
+    <Folder Include="DivideAndConqur\" />
+    <Folder Include="Maths\" />
+    <Folder Include="GreedyAlgorithm\" />
+    <Folder Include="Arrays\" />
+    <Folder Include="BackTracking\" />
+    <Folder Include="SegmentTree\" />
+    <Folder Include="Closed\" />
+    <Folder Include="Closed\Array\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4FB69DF-1FA2-49F0-8A39-6EEC4699685D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LeetCode.Tests</RootNamespace>
+    <AssemblyName>LeetCode.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.UITest">
+      <HintPath>..\packages\Xamarin.UITest.2.0.8\lib\Xamarin.UITest.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Strings\LongestPalindromeSubstring.cs" />
+    <Compile Include="Strings\MaxProductOfWordsLength.cs" />
+    <Compile Include="DynamicProgramming\MoneyExchanger.cs" />
+    <Compile Include="Sort\MergeSortTests.cs" />
+    <Compile Include="Sort\QuickSortTests.cs" />
+    <Compile Include="Strings\PalindromicSubArrays.cs" />
+    <Compile Include="Strings\PalindromePartitioningTests.cs" />
+    <Compile Include="Strings\LongestPalindromeSubsequence.cs" />
+    <Compile Include="LinkedList\PalindromeTests.cs" />
+    <Compile Include="LinkedList\ReverseLinkedListTests.cs" />
+    <Compile Include="DynamicProgramming\CountUniqPalindromicSubsequences.cs" />
+    <Compile Include="Sort\WiggleSortTests.cs" />
+    <Compile Include="Strings\WordBreakTests.cs" />
+    <Compile Include="Trees\BSTIteratorTests.cs" />
+    <Compile Include="Strings\StrStrTests.cs" />
+    <Compile Include="GreedyAlgorithm\MinMeetingRoomsTests.cs" />
+    <Compile Include="Maths\FractionToDecimal.cs" />
+    <Compile Include="Trees\Trie.cs" />
+    <Compile Include="Sort\MedianOfTwoSortedArray.cs" />
+    <Compile Include="Strings\WordBreak2Tests.cs" />
+    <Compile Include="Maths\BaseCalculatorTests.cs" />
+    <Compile Include="Maths\BaseCalculatorTests2.cs" />
+    <Compile Include="Strings\RegexMatching.cs" />
+    <Compile Include="LinkedList\MergeKList.cs" />
+    <Compile Include="Arrays\TrapRainWaterTests.cs" />
+    <Compile Include="LinkedList\ReverseKGroup.cs" />
+    <Compile Include="Trees\MaxPathSumTests.cs" />
+    <Compile Include="Trees\BTSerializerTests.cs" />
+    <Compile Include="Strings\CreateShortestPalindromeTests.cs" />
+    <Compile Include="Graphs\RedundantConnectionsTests.cs" />
+    <Compile Include="Graphs\RedundantConnections2Tests.cs" />
+    <Compile Include="Graphs\AlientDictionaryTests.cs" />
+    <Compile Include="BackTracking\FlipGameTest.cs" />
+    <Compile Include="Arrays\ReverseWords.cs" />
+    <Compile Include="SegmentTree\RangeSum2DTests.cs" />
+    <Compile Include="Strings\WildcardMatchingTests.cs" />
+    <Compile Include="Graphs\CloneUndirectedGraphTests.cs" />
+    <Compile Include="LinkedList\LFUCacheTests.cs" />
+    <Compile Include="Strings\Permutation2Tests.cs" />
+    <Compile Include="Trees\BuildBTFromInOrderAndPostOrderTests.cs" />
+    <Compile Include="BackTracking\CanJumpTests.cs" />
+    <Compile Include="LinkedList\DetectCycleNodeTests.cs" />
+    <Compile Include="Strings\RemoveInvalidParenthesesTests.cs" />
+    <Compile Include="Arrays\SubsetSubArraySumTests.cs" />
+    <Compile Include="LinkedList\LRUCacheTests .cs" />
+    <Compile Include="Graphs\MeshMessagerTests.cs" />
+    <Compile Include="MinHeapTests.cs" />
+    <Compile Include="DequeTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Strings\" />
+    <Folder Include="DynamicProgramming\" />
+    <Folder Include="Sort\" />
+    <Folder Include="LinkedList\" />
+    <Folder Include="Trees\" />
+    <Folder Include="GreedyAlgorithm\" />
+    <Folder Include="Maths\" />
+    <Folder Include="Arrays\" />
+    <Folder Include="Graphs\" />
+    <Folder Include="BackTracking\" />
+    <Folder Include="SegmentTree\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeetCode\LeetCode.csproj">
+      <Project>{3097C7DA-B7E6-4C2E-9F8C-94FB94AEA928}</Project>
+      <Name>LeetCode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
